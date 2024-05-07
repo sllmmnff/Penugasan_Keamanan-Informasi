@@ -35,10 +35,10 @@ def main():
             message = input("Masukkan pesan yang akan dienkripsi: ")
             iv, ciphertext = encrypt_message(message, key)
             print("\nPesan Terenkripsi:")
-            print("IV:", iv)
+            print("Key :", iv)
             print("Ciphertext:", ciphertext)
         elif option == '2':
-            iv = input("Masukkan IV: ")
+            iv = input("Masukkan Key : ")
             ciphertext = input("Masukkan Ciphertext: ")
             decrypted_message = decrypt_message(iv, ciphertext, key)
             print("\nPesan Terdekripsi:")
